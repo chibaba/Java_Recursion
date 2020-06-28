@@ -32,4 +32,38 @@
             <summertime-high-temp>34.4 C</summertime-high-temp>
         </with-no-emission-cuts>
     </in-year-2010>
+    <city>
+        <name>Tokyo</name>
+        <country>Japan</country>
+        <summertime-high-temp>26.2 C</summertime-high-temp>
+        <in-year-2100>
+            <with-moderate-emission-cuts>
+                <name>Beijing</name>
+                <country>China</country>
+                <summertime-high-temp>29.0 C</summertime-high-temp>
+            </with-moderate-emission-cuts>
+            <with-no-emission-cuts>
+                <name>Wuhan</name>
+                <country>China</country>
+                <summertime-high-temp>31.2 C</summertime-high-temp>
+            </with-no-emission-cuts>
+        </in-year-2100>
+    </city>
+    <city>
+        <name>Barcelona</name>
+        <country>Spain</country>
+        <summertime-high-temp>25.7 C</summertime-high-temp>
+        <in-year-2100>
+            <with-moderate-emission-cuts>
+                <name>Madrid</name>
+                <country>Spain</country>
+                <summertime-high-temp>28.9 C</summertime-high-temp>
+            </with-moderate-emission-cuts>
+            <with-no-emission-cuts>
+                <name>Izmir</name>
+                <country>Turkey</country>
+                <summertime-high-temp>32.2 C</summertime-high-temp>
+            </with-no-emission-cuts>
+        </in-year-2100>
+    </city>
 </cities>

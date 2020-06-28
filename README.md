@@ -6,6 +6,6 @@ For Group Id, enter com.packtpub.recursion.
 For Artifact Id, enter chapter14.
 For Version, enter 1.0.
 Accept the default on the next pane. Click on Next.
-Leave the project name as chapter14.
+Leave the project name as #Java_Recursion
 Click on Finish.
 Call up build.gradle in the IntelliJ text editor.

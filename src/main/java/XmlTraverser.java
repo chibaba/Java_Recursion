@@ -1,5 +1,7 @@
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -34,5 +36,23 @@ public class XmlTraverser {
     public void indent(int indentation) {
         System.out.print(StringUtils.leftPad("", indentation));
     }
+    public void transverseNode(Node node, int indentation) {
+        indent(indentation);
+        System.out.print(node.getNodeName() + " ");
+            if(node.hasChildNodes()) {
+                indentation += 2;
+                NodeList children = node.getChildNodes();
+                for (int i = 0; i < children.getLength(); i++) {
+                    Node child = children.item(i);
+                    if (child.getNodeType() == Node.TEXT_NODE) {
+                        printText( child.getTextContent() );
+                    } else {
+                        System.out.println();
+                    }
+                }
+            }
+
+        }
+
 
 }

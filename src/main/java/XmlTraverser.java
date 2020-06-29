@@ -48,10 +48,14 @@ public class XmlTraverser {
                         printText( child.getTextContent() );
                     } else {
                         System.out.println();
+                        transverseNode(child, indentation);
                     }
                 }
             }
 
+        }
+        public void traverseDocument(Document document) {
+        transverseNode(document.getFirstChild(), 0);
         }
 
 

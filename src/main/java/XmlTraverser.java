@@ -12,6 +12,7 @@ import java.io.IOException;
 
 public class XmlTraverser {
     public Document loadXml() {
+        Document document = null;
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -56,6 +57,12 @@ public class XmlTraverser {
         }
         public void traverseDocument(Document document) {
         transverseNode(document.getFirstChild(), 0);
+        }
+
+        public static void main(String[] args) {
+        XmlTraverser traverser = new XmlTraverser();
+        Document document = traverser.loadXml();
+        traverser.traverseDocument(document);
         }
 
 
